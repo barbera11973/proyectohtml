@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+}
+* {
+    margin:0px;
+    padding:0px;
+    
+}
+body{
+    background: #fff;
+    color: #000;
+    font-size: 1em;
+    text-align: left;
+
+}
+header{
+    position: fixed ;
+    top: 0;
+    width: 100%;
+    height: 110px;  
+    background-color:#616060;
+}
+header img{   
+    position: fixed;
+    width:150px;
+    height:110px;
+}
+nav{
+    max-width: 1024px;
+    margin: 0 auto;
+    
+}
+nav ul{
+    float:right;
+    list-style: none;
+    text-align: left;
+    vertical-align: top;
+    
+}
+nav li{
+    list-style-type: none;
+    padding: 5px;
+    display: inline;
+    border-right: 1px solid #7ed957;
+
+}
+nav li a{
+    color:#000;
+    text-decoration: none;
+    padding: 15px 22px;
+    line-height: 130px; 
+    color:white;   
+}
+nav li a:hover{
+    color:#7ed957;
+    
+}
+.visitado:link
+{
+    color:#7ed957;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(126,217,87,1);
+    -moz-box-shadow: 0px 5px 0px 0px rgba(126,217,87,1);
+    box-shadow: 0px 5px 0px 0px rgba(126,217,87,1);
+}
+
+
+form{
+    margin:0 auto;
+    margin-top: 200px;
+    max-width:750px;
+    padding:50px;
+    background: rgb(213,249,41);
+    background: linear-gradient(90deg, rgba(213,249,41,1) 3%, rgba(153,224,53,1) 56%, rgba(4,245,178,1) 100%);
+} 
+form h2{
+    margin-bottom:25px;
+}
+form input, form textarea{
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+    border: none; 
+    font-size: 1em;
+    resize: horizontal; 
+}
+.check
+{
+    position: absolute;
+    top:893px;
+    right: 400px;
+    left: -30px;
+
+}
+form button
+{
+    display: block;
+    margin-left:300px;
+    background-color:#959c92;
+    padding: 10px 45px 10px 45px;
+    border: 0;
+    font-size: 1em; 
+    color: 	white;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+    background-color: rgb(146, 144, 143); 
+}
+form button:hover{
+    opacity: 0.3;
+    margin: 2px;
+    color:black;
+}
+aside{
+    line-height: 50px;
+    text-align:center;
+    text-decoration:none;  
+    list-style-type: square;
+    background-color:rgb(31, 31, 31);
+    padding-bottom: 100px;
+    color:white; 
+    margin-top: 200px; 
+}
+aside{
+    line-height: 50px;
+    text-align:center;
+    text-decoration:none;  
+    list-style-type: square;
+    background-color:rgb(31, 31, 31);
+    padding-bottom: 200px;
+    color:white;  
+}
+aside ul{
+    list-style: none;
+    text-align: left;
+    vertical-align: top;   
+}
+.enlaces1{
+    float: left;
+    margin-left: 700px;
+}
+.enlaces2{
+    float: left;
+    margin-left: 250px;
+}
+aside h3
+{
+    color:white;
+}
+aside a
+{
+    color:white;
+    text-decoration:none;
+}
+aside a:hover
+{
+    color:#7ed957;
+}
+aside a:active
+{
+    color:red;
+}
+footer{   
+    clear:both;
+    position:relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0); 
+    color:white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;   
+}
+footer .logos img
+{
+    width:50px;
+}
+footer h2
+{
+    color:white;
+}
+footer h4{
+    margin-top:10px;
+    margin-bottom: 5px;
+    color:white;
+}
+footer .cookies a{
+    text-decoration: none;
+    color:white;
+}
+footer .cookies a:hover
+{
+    color:#7ed957;
+}
+footer .redes a{
+    margin-right: 10px;
+    text-decoration: none;
+    color:white;
+}
+footer .redes .a:hover
+{
+    color:#7ed957;
+}
+footer .logos{
+    margin-top: 30px;
+}
+footer .logos a{
+    text-decoration: none;
+}
+footer i
+{
+    color:white;
+    font-size:2em;
+    margin-right:20px;
+}
