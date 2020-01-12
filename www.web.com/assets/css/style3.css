@@ -1,27 +1,48 @@
-@font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
 }
+@media screen and (max-width: 1080px) {
+    main{
+        width:100%;
+        display:block;
+    }
+    aside{
+        width: 100%;
+        display:block;
+    }
+    footer{
+        width: 100%;
+        display: block;
+    }
+}
+
 * {
     margin:0px;
     padding:0px;
-    
+    box-sizing: border-box;  
 }
 body{
     background: #fff;
-    color: #000;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    text-align: left;
-
+    line-height: 1.5em;
 }
-header{
-    position: fixed ;
-    top: 0;
+.contenedorPrincipal
+{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+header
+{
+    position: fixed;
     width: 100%;
     height: 110px;  
     background-color:#616060;
+    overflow: hidden;
 }
 header img{   
     position: fixed;
@@ -29,7 +50,7 @@ header img{
     height:110px;
 }
 nav{
-    max-width: 1024px;
+    max-width: 1080px;
     margin: 0 auto;
     
 }
@@ -45,14 +66,15 @@ nav li{
     padding: 5px;
     display: inline;
     border-right: 1px solid #7ed957;
-
 }
+
 nav li a{
     color:#000;
     text-decoration: none;
     padding: 15px 22px;
     line-height: 130px; 
-    color:white;   
+    color:white;  
+    display: inline; 
 }
 nav li a:hover{
     color:#7ed957;
@@ -65,7 +87,25 @@ nav li a:hover{
     -moz-box-shadow: 0px 5px 0px 0px rgba(126,217,87,1);
     box-shadow: 0px 5px 0px 0px rgba(126,217,87,1);
 }
+main
+{
+    background-color: white;
+    width: 92%;
+    float: left;
+    margin-bottom:100px;
+}
+main .art1 video
+{
+    max-width: 100%;
+}
+main section{
+    margin-top: 100px;
+    padding: 50px;
+}
 
+main h1{
+    margin-bottom: 20px;
+}
 
 form{
     margin:0 auto;
@@ -89,25 +129,15 @@ form input, form textarea{
     font-size: 1em;
     resize: horizontal; 
 }
-.check
-{
-    position: absolute;
-    top:893px;
-    right: 400px;
-    left: -30px;
-
-}
 form button
 {
     display: block;
-    margin-left:300px;
+    margin:0 auto;
     background-color:#959c92;
     padding: 10px 45px 10px 45px;
     border: 0;
     font-size: 1em; 
     color: 	white;
-    -webkit-transition: 0.5s linear;
-    transition: 0.5s linear;
     background-color: rgb(146, 144, 143); 
 }
 form button:hover{
@@ -116,43 +146,41 @@ form button:hover{
     color:black;
 }
 aside{
-    line-height: 50px;
-    text-align:center;
-    text-decoration:none;  
-    list-style-type: square;
+    clear:both;  
     background-color:rgb(31, 31, 31);
-    padding-bottom: 100px;
-    color:white; 
-    margin-top: 200px; 
-}
-aside{
-    line-height: 50px;
-    text-align:center;
-    text-decoration:none;  
-    list-style-type: square;
-    background-color:rgb(31, 31, 31);
-    padding-bottom: 200px;
-    color:white;  
-}
-aside ul{
-    list-style: none;
-    text-align: left;
-    vertical-align: top;   
-}
-.enlaces1{
-    float: left;
-    margin-left: 700px;
-}
-.enlaces2{
-    float: left;
-    margin-left: 250px;
+    color:white;
+    text-align: center; 
+    padding-top: 20px;
+    padding-bottom: 80px;  
+    overflow: hidden;
 }
 aside h3
 {
     color:white;
+    margin-bottom: 50px;
+}
+.enlaces
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+.enlaces div
+{
+    text-align: center;
+}
+.enlaces1{
+    text-decoration: none;
+    color:white;
+}
+.enlaces2{
+    text-decoration: none;
+    color:white;
 }
 aside a
-{
+{  
     color:white;
     text-decoration:none;
 }
@@ -164,25 +192,20 @@ aside a:active
 {
     color:red;
 }
-footer{   
-    clear:both;
-    position:relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
+footer{  
     background-color: rgb(0, 0, 0); 
     color:white;
-    text-align: center;
+    text-align: center; 
     padding-top: 20px;
-    padding-bottom: 30px;   
+    padding-bottom: 30px;  
+    overflow: hidden;
 }
-footer .logos img
-{
-    width:50px;
-}
+
 footer h2
 {
     color:white;
+    line-height: 50px;
+    
 }
 footer h4{
     margin-top:10px;
@@ -197,20 +220,32 @@ footer .cookies a:hover
 {
     color:#7ed957;
 }
-footer .redes a{
+footer .cookies a.visited
+{
+    color:yellow;
+}
+footer a{
     margin-right: 10px;
     text-decoration: none;
     color:white;
 }
-footer .redes .a:hover
+footer  a:hover
 {
     color:#7ed957;
+}
+footer  a:link
+{
+    color:white;
 }
 footer .logos{
     margin-top: 30px;
 }
 footer .logos a{
     text-decoration: none;
+}
+footer .logos i
+{
+    width:50px;
 }
 footer i
 {

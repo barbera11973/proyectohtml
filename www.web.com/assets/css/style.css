@@ -1,22 +1,65 @@
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 1080px) {
+    main{
+        width:100%;
+        display:block;
+    }
+    aside{
+        width: 100%;
+        display:block;
+    }
+    footer{
+        width: 100%;
+        display: block;
+    }
+}
+.animacionLogo {
+    animation-duration: 10s;
+    animation-name: animLogo;
+    animation-iteration-count: 5;
+  }
+@keyframes animLogo{
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+    }
+    50%{
+        -webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+    } to {
+        -webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+        }
+}
 * {
     margin:0px;
     padding:0px;
-    
+    box-sizing: border-box;  
 }
 body{
     background: #fff;
-    color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    text-align: left;
-    min-height:100%;
+    line-height: 1.5em;
 }
-header{
-    position: fixed ;
-    top: 0;
+.contenedorPrincipal
+{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+header
+{
+    position: fixed;
     width: 100%;
     height: 110px;  
     background-color:#616060;
+    overflow: hidden;
 }
 header img{   
     position: fixed;
@@ -24,7 +67,7 @@ header img{
     height:110px;
 }
 nav{
-    max-width: 1024px;
+    max-width: 1080px;
     margin: 0 auto;
     
 }
@@ -47,7 +90,8 @@ nav li a{
     text-decoration: none;
     padding: 15px 22px;
     line-height: 130px; 
-    color:white;   
+    color:white;  
+    display: inline; 
 }
 nav li a:hover{
     color:#7ed957;
@@ -59,6 +103,24 @@ nav li a:hover{
     -webkit-box-shadow: 0px 5px 0px 0px rgba(126,217,87,1);
     -moz-box-shadow: 0px 5px 0px 0px rgba(126,217,87,1);
     box-shadow: 0px 5px 0px 0px rgba(126,217,87,1);
+}
+main
+{
+    background-color: white;
+    width: 92%;
+    float: left;
+}
+main section{
+    margin-top: 100px;
+    padding: 50px;
+    margin-bottom:100px;
+}
+main section p{
+    text-align: justify;
+    margin-bottom: 16px;
+}
+main h1{
+    margin-bottom: 20px;
 }
 .b{
     font-weight:bold;
@@ -75,102 +137,161 @@ nav li a:hover{
 .espacio{
     letter-spacing: 20px;
 }
-
-section{
-    text-align: left;
-    margin-top: 200px;
-    margin-left:350px;
-    margin-right:555px;
+section h3
+{
+    margin-bottom:20px;
 }
-section h2{
-    font-style:italic;
-    font-size:2em;
-    font-weight:bold;
+section hr{
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
-section h3{
-    margin-bottom:8px;
+section .art1 video
+{
+    margin-bottom: 40px;
+    max-width: 100%;
 }
-section .art1{
-    margin-top: 30px; 
-    margin-bottom:8px;  
-}
-section .art1 img{
-    margin-top:20px;
-    margin-left:150px; 
-    margin-bottom:20px; 
-}
-section .art2{
+section .art1 audio
+{
     margin-top: 30px;
-    margin-bottom:8px; 
-       
 }
 section .art2 a{
     text-decoration: none; 
 }
 section .art3 img{
     float:right;
-    margin-right: 50px;
-}
-section .art3{
-    margin-top: 30px;           
+    margin-left: 20px;
+    height: 220px;
+    width: 150px;
 }
 section .art3 p{
     margin-right: 30px;
     margin-top: 15px;
-    font-size: 20px; 
-    overflow: auto;      
+    font-size: 1em;
+    padding-bottom: 10px;     
 }
-section .art3 hr{
-    margin-top: 100px;
+section .art4 h3
+{
+    text-align: center;
 }
-section .art4 h3{
-    margin-top:30px;
-    margin-bottom: 30px;
-    margin-left:400px;
-}
-section .art4 img{
+section .art4 img
+{
     float:left;
+    margin-right: 20px;
+    height: 300px;
+    width: 230px;
 }
-section .art4{
-    margin-bottom:150px;   
+section .art4 hr
+{
+    margin-top: 130px;
 }
-section .art4 .texto{
-    margin-left:320px; 
+section #medio
+{
+    max-width: 100%; 
+    margin-top: 20px;  
 }
-section hr{
-    margin-top:8px;
+section nav #reiniciar
+{
+    margin-left: 5px;
+    padding: 5px 5px 5px 5px; 
 }
-section{
-    margin-bottom:400px;
+section nav #retrasar
+{
+    padding: 5px 5px 5px 5px; 
 }
+section nav #play
+{
+    padding: 5px 5px 5px 5px; 
+}
+section nav #adelantar
+{
+    padding: 5px 5px 5px 5px; 
+}
+section nav #silenciar
+{
+    margin-left: 25px;
+    padding: 5px 5px 5px 5px; 
+}
+section nav #menosVolumen
+{
+    padding: 5px 5px 5px 5px; 
+}
+section nav #masVolumen
+{
+    padding: 5px 5px 5px 5px;
+}
+main section nav
+{
+    margin-bottom: 80px;
+}
+main section .audio h2
+{
+    margin-bottom: 20px;
+}
+main section .audio button
+{
+    margin-bottom: 5px;   
+}
+main section .audio #audio1
+{
+    padding:10px 10px 10px 10px;
+}
+main section .audio #audio2
+{
+    padding:10px 27px 10px 10px;
+}
+main section .audio #audio3
+{
+    padding:10px 19px 10px 10px;
+}
+main section .audio #audio4
+{
+    padding:10px 12px 10px 10px;
+}
+main section .audio
+{
+    margin-bottom: 20px;
+}
+canvas
+{
+    background: white;
+}
+
 aside{
-    line-height: 50px;
-    text-align:center;
-    text-decoration:none;  
-    list-style-type: square;
+    clear:both;  
     background-color:rgb(31, 31, 31);
-    padding-bottom: 200px;
-    color:white;  
-}
-aside ul{
-    list-style: none;
-    text-align: left;
-    vertical-align: top;   
-}
-.enlaces1{
-    float: left;
-    margin-left: 700px;
-}
-.enlaces2{
-    float: left;
-    margin-left: 250px;
+    color:white;
+    text-align: center; 
+    padding-top: 20px;
+    padding-bottom: 80px;  
+    overflow: hidden;
 }
 aside h3
 {
     color:white;
+    margin-bottom: 50px;
+}
+.enlaces
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+.enlaces div
+{
+    text-align: center;
+}
+.enlaces1{
+    text-decoration: none;
+    color:white;
+}
+.enlaces2{
+    text-decoration: none;
+    color:white;
 }
 aside a
-{
+{  
     color:white;
     text-decoration:none;
 }
@@ -182,22 +303,15 @@ aside a:active
 {
     color:red;
 }
-footer{   
-    clear:both;
-    position:relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
+footer{  
     background-color: rgb(0, 0, 0); 
     color:white;
     text-align: center; 
     padding-top: 20px;
     padding-bottom: 30px;  
+    overflow: hidden;
 }
-footer .logos img
-{
-    width:50px;
-}
+
 footer h2
 {
     color:white;
@@ -221,24 +335,28 @@ footer .cookies a.visited
 {
     color:yellow;
 }
-footer .redes a{
+footer a{
     margin-right: 10px;
     text-decoration: none;
     color:white;
 }
-footer .redes a:hover
+footer  a:hover
 {
     color:#7ed957;
 }
-footer .redes a:link
+footer  a:link
 {
-    color:red;
+    color:white;
 }
 footer .logos{
     margin-top: 30px;
 }
 footer .logos a{
     text-decoration: none;
+}
+footer .logos i
+{
+    width:50px;
 }
 footer i
 {
@@ -247,21 +365,10 @@ footer i
     margin-right:20px;
 }
 
-img:not([alt])
-{  
-    border:3px solid red;
-}
-.art2 a{
-    text-decoration: none;
-}
 
-.art2 a:after[href]
-{
-    background-image: url("https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png");
-}
 .parallax {
-    background-image: url("https://pixabay.com/get/52e6d6414950af14f6d1867dda6d49214b6ac3e456567540742b7fd092/faroe-islands-4632323_1920.jpg");
-    height: 800px; 
+    background-image: url("https://cdn.pixabay.com/photo/2015/03/26/09/41/mountain-690104_960_720.jpg");
+    height: 400px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -271,9 +378,10 @@ img:not([alt])
   .parallax img{
     max-width: 400px;
     position: absolute;
-    left: 70%;
-    top: 70%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
   }
+  
   
