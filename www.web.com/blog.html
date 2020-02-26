@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <script src="https://kit.fontawesome.com/509deda241.js" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/509deda241.js" crossorigin="anonymous"></script>   
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
@@ -10,12 +9,16 @@
     <meta name="description" content="Esta es una página web que ofrece servicios para el cuidado de todo tipo de animales.En esta web encontrarás artículos,como servicios relacionado para ellos.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="./assets/js/JavaScriptProyecto.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <title>Blog -</title>
 </head>
 <body>
-    <header class="no-print">
-    <nav class="no-print">
+    <header>
+        <div class="responsive-nav">
+            <a href="#" id="trigger">Menu</a>
+    <nav >
             <a href="./Inicio.html"><img src="assets/images/all_care.png" class="animacionLogo" alt="AllCare"></a>
         <ul>
             <li><a class="visitado" href="./blog.html">Blog</a></li>
@@ -23,20 +26,21 @@
             <li><a href="./Contacto.html">Contacto</a></li>
         </ul>
     </nav>
+</div>
 </header>
 <div class="contenedorPrincipal">
 <main>
     <section>
-        <h1>Artículos</h1>
+        <h2>Artículos</h2>
         <article class="art1">           
-            <h2>Ejemplo árticulo Lorem ipsum1 </h2>
+            <h3>Ejemplo árticulo Lorem ipsum1 </h3>
             <p><span class="u">Párrafo Lorem ipsum</span> dolor sit amet consectetur adipisicing <span class="t">elit</span>. Officia beatae aliquam non natus aut id sint ea? Natus tempore hic reprehenderit temporibus minima nisi, quia, magnam omnis, officiis molestiae earum</p>
             <video width="720" height="400" controls>
                     <source src="assets/images/Boat_on_Lake_webm.webm" type='video/webm; codecs="vp8, vorbis"' /> 
                     <source src="assets/images/Boat_on_Lake_ogg.ogg" type='video/ogg; codecs="theora, vorbis"' />  
                     <source src="assets/images/Boat_on_Lake_mp4.mp4" type="video/mp4">    
             </video>
-            <h2>Ejemplo audio</h2>
+            <h3>Ejemplo audio</h3>
             <audio controls>
                     <source src="assets/images/puertas_y_cajones_de_un_armario_de_cuarto_de_bano_3mp3.mp3" type='audio/mpeg; codecs="mp3"'>
                     <source src="assets/images/puertas_y_cajones_de_un_armario_de_cuarto_de_bano_3ogg.ogg" type='audio/ogg; codecs="vorbis"' >
@@ -62,7 +66,7 @@
                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>    
                <hr>        
         </article>
-            <h2>Control de vídeo</h2>
+            <h3>Control de vídeo</h3>
         <video id="medio" width="720" height="400" >
             <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
             <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">
@@ -77,7 +81,7 @@
                   <input type="button" id="masVolumen" value="+">
           </nav>
         <div class="audio">
-        <h2>Control de audio</h2>
+        <h3>Control de audio</h3>
         <button id="audio1">Sonido ambiente &#128266;</button><br>
         <button id="audio2">Sonido policia &#128266;</button><br>
         <button id="audio3">Sonido navidad &#128266;</button><br>
@@ -92,6 +96,7 @@
        <canvas id="lienzo2" width="600" height="400"> 
         Su navegador no soporta el elemento canvas
       </canvas>
+      <a id="arriba" href="#"><i class="fas fa-arrow-circle-up"></i></a>
     </section>
 </div> 
 </main>
@@ -99,42 +104,107 @@
             <h3>Enlaces de interés</h3> 
         <div class="enlaces">
             <div class="enlaces1">
-            <a href="https://www.visavet.es/es/zoonosis-por-garrapatas-hallazgos-realizados-en-la-comunidad-de-madrid/34=598/">Árticulo sobre la garrapata.</a>   
+            <a href="#" id="articulo1">Artículo 1</a>   
             <br>  
-            <a href="https://es.wikipedia.org/wiki/Perro_de_caza">Info sobre perros cazadores</a>
+            <a href="#" id="articulo2">Artículo 2</a>
             <br>
-            <a href="https://www.lipsum.com">Lorem Ipsum</a>
+            <a href="#" id="articulo3">Artículo 3</a>
             </div>
             <div class="enlaces2">
-            <a href="https://www.lipsum.com">Lorem Ipsum</a>
+            <a href="#" id="articulo4">Artículo 4</a>
             <br>
-            <a href="https://www.lipsum.com">Lorem Ipsum</a>
+            <a href="#" id="video">Vídeo</a>
             <br>
-            <a href="https://www.lipsum.com">Lorem Ipsum</a>
+            <a href="#" id="audio">Audio</a>
+            <br>
+            <a href="#" id="juego">Juego</a>
             </div> 
         </div> 
         </aside>
 
         <footer class="no-print">
                 <div class="cookies">
-                    <h2>@AllCare</h2>
+                    <h3>@AllCare</h3>
                     <h4>Aviso legal</h4>
                     <a href="https://www.cookiebot.com/es/politica-de-cookies/?gclid=EAIaIQobChMIg_TTpN-U5QIVA_hRCh2eXQDREAAYASAAEgJ3LvD_BwE"><p>Politica de privacidad y cookies</p></a>
                 </div>   
                     
-                    <div class="logos">
-                            <h4>Redes sociales</h4>   
-                        <a title="facebook" href="https://facebook.com">
-                            <i class="fab fa-facebook-square"></i>                            
-                        </a>
-                        <a title="twitter" href="https://twitter.com">
-                            <i class="fab fa-twitter"></i>               
-                        </a>   
-                        <a title="whatsapp" href="https://whatsapp.com">
-                            <i class="fab fa-whatsapp"></i>          
-                        </a>   
-                </div>
+                <div class="logos">
+                    <h4>Redes sociales</h4>   
+                <a target="_blank" title="facebook" href="https://facebook.com">
+                    <i class="fab fa-facebook-square" title="Ir a facebook de AllCare"></i>                            
+                </a>
+                <a target="_blank" title="twitter" href="https://twitter.com">
+                    <i class="fab fa-twitter" title="Ir a twitter de AllCare"></i>               
+                </a>   
+                <a target="_blank" title="whatsapp" href="https://whatsapp.com">
+                    <i class="fab fa-whatsapp" title="Ir a whatsapp de AllCare"></i>          
+                </a>   
+        </div>
         </footer>  
-     
+<script>
+    $(document).ready(function()
+    {
+        $("#articulo1").click(function()
+        {
+            $('html, body').animate({scrollTop: $(".art1").offset().top},'slow');
+        });
+        $("#articulo2").click(function()
+        {
+            $('html, body').animate({scrollTop: $(".art2").offset().top},'slow');
+        });
+        $("#articulo3").click(function()
+        {
+            $('html, body').animate({scrollTop: $(".art3").offset().top},'slow');
+        });
+        $("#articulo4").click(function()
+        {
+            $('html, body').animate({scrollTop: $(".art4").offset().top},'slow');
+        });
+        $("#audio").click(function()
+        {
+            $('html, body').animate({scrollTop: $(".audio").offset().top},'slow');
+        });
+        $("#video").click(function()
+        {
+            $('html, body').animate({scrollTop: $("#medio").offset().top},'slow');
+        });
+        $("#juego").click(function()
+        {
+            $('html, body').animate({scrollTop: $("#lienzo2").offset().top},'slow');
+        });
+
+        $("#arriba").css("display", "none");
+	    $(window).scroll(function()
+        {
+		if($(window).scrollTop() > 500)
+        {
+			$("#arriba").fadeIn("slow");
+		}
+		else 
+        {
+			$("#arriba").fadeOut("slow");
+		}
+	    });
+        var x = true;
+        $('#trigger').on("click", function(e)
+        {
+            e.preventDefault();
+        if(x)
+        {
+            $('nav').stop().slideToggle('fast');
+            x = false;
+        }
+        else
+        {
+            $('nav').stop().slideToggle('fast', function()
+            {
+                $('nav').css('display','');
+                x = true;
+            })
+        } 
+        });
+    });
+</script>   
 </body>
 </html>

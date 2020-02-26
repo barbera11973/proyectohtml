@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <script src="https://kit.fontawesome.com/509deda241.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -25,11 +25,11 @@
 <div class="contenedorPrincipal">
     <main>
     <form>
-        <h1>Formulario de contacto</h1>
-            <label>Nombre: </label><input name="nombre" placeholder="name" required autofocus  pattern="[A-Za-z0-9]+" type="text" tabindex="1"/><br /><br /> 
-            <label>Email: </label><input name="email" placeholder="mail" required type="text" tabindex="2"/><br /><br />
-            <label>Edad: </label><input name="edad" placeholder="age" required pattern="{18-99}" type="text" tabindex="3"/><br /><br />
-            <label>Teléfono: </label><input name="telefono" placeholder="tel" required type="text" tabindex="4"/><br /><br />
+        <h2>Formulario de contacto</h2>
+            <label title="">Nombre: </label><input name="nombre" placeholder="name" required autofocus  pattern="[A-Za-z0-9]+" type="text" title="Introduce tu nombre" tabindex="1"/><br /><br /> 
+            <label title="">Email: </label><input name="email" placeholder="mail" required type="text" title="introduce tu email" tabindex="2"/><br /><br />
+            <label title="">Edad: </label><input name="edad" placeholder="age" required pattern="{18-99}" type="text" title="Introduce tu edad" tabindex="3"/><br /><br />
+            <label title="">Teléfono: </label><input name="telefono" placeholder="tel" required type="text" title="Introduce tu telefono o movil" tabindex="4"/><br /><br />
             <textarea name="textarea" rows="10" cols="50" placeholder="Escríbenos"></textarea> <br /><br />
             <button id="enviar" name="enviar" type="submit" >Enviar</button>
     </form>
@@ -56,24 +56,24 @@
 </aside>
 
 <footer class="no-print">
-        <div class="cookies">
-            <h2>@AllCare</h2>
-            <h4>Aviso legal</h4>
-            <a href="https://www.cookiebot.com/es/politica-de-cookies/?gclid=EAIaIQobChMIg_TTpN-U5QIVA_hRCh2eXQDREAAYASAAEgJ3LvD_BwE"><p>Politica de privacidad y cookies</p></a>
-        </div>   
-            
-            <div class="logos">
-                    <h4>Redes sociales</h4>   
-                <a title="facebook" href="https://facebook.com">
-                    <i class="fab fa-facebook-square"></i>                            
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                    <i class="fab fa-twitter"></i>               
-                </a>   
-                <a title="whatsapp" href="https://whatsapp.com">
-                    <i class="fab fa-whatsapp"></i>          
-                </a>   
-        </div>
-</footer>   
+    <div class="cookies">
+        <h3>@AllCare</h3>
+        <h4>Aviso legal</h4>
+        <a href="https://www.cookiebot.com/es/politica-de-cookies/?gclid=EAIaIQobChMIg_TTpN-U5QIVA_hRCh2eXQDREAAYASAAEgJ3LvD_BwE"><p>Politica de privacidad y cookies</p></a>
+    </div>   
+        
+    <div class="logos">
+        <h4>Redes sociales</h4>   
+    <a target="_blank" title="facebook" href="https://facebook.com">
+        <i class="fab fa-facebook-square" title="Ir a facebook de AllCare"></i>                            
+    </a>
+    <a target="_blank" title="twitter" href="https://twitter.com">
+        <i class="fab fa-twitter" title="Ir a twitter de AllCare"></i>               
+    </a>   
+    <a target="_blank" title="whatsapp" href="https://whatsapp.com">
+        <i class="fab fa-whatsapp" title="Ir a whatsapp de AllCare"></i>          
+    </a>   
+</div>
+</footer> 
 </body>
 </html>

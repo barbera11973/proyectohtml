@@ -1,12 +1,23 @@
-@media print
-{    
-    .no-print, .no-print *
+@media screen and (max-width: 600px) 
+{
+    #trigger
     {
-        display: none !important;
+        display:block;
+        
     }
+    nav
+    {
+        display:none;
+    }     
+    nav a
+    {
+        width:100%;
+    }  
 }
-@media screen and (max-width: 1080px) {
-    main{
+@media screen and (min-width:601px) and (max-width: 1920px) 
+{
+    main
+    {
         width:100%;
         display:block;
     }
@@ -14,7 +25,8 @@
         width: 100%;
         display:block;
     }
-    footer{
+    footer
+    {
         width: 100%;
         display: block;
     }
@@ -53,6 +65,7 @@ body{
     max-width: 1080px;
     margin: 0 auto;
 }
+
 header
 {
     position: fixed;
@@ -61,41 +74,55 @@ header
     background-color:#616060;
     overflow: hidden;
 }
-header img{   
+header img
+{   
     position: fixed;
     width:150px;
     height:110px;
 }
-nav{
+#trigger
+{
+    background:red;
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:5px;
+    text-align:center;
+    display:none;
+} 
+nav
+{
     max-width: 1080px;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
-nav ul{
+nav ul
+{
     float:right;
     list-style: none;
     text-align: left;
-    vertical-align: top;
-    
+    vertical-align: top;    
 }
-nav li{
+nav li
+{
     list-style-type: none;
     padding: 5px;
     display: inline;
     border-right: 1px solid #616060;
 }
 
-nav li a{
+nav li a
+{
     color:#000;
     text-decoration: none;
     padding: 15px 22px;
     line-height: 130px; 
     color:white;  
-    display: inline; 
-}
-nav li a:hover{
-    color:#7ed957;
+    display: inline-block; 
     
+}
+nav li a:hover
+{
+    color:#7ed957;   
 }
 .visitado:link
 {
@@ -255,7 +282,15 @@ canvas
 {
     background: white;
 }
-
+#arriba 
+{
+	display: block;
+	position: fixed;
+	top: 85%;
+    right: 10px;
+	padding: 4px 4px 4px 4px;
+    font-size: 3em; color: rgb(138, 255, 71);
+}
 aside{
     clear:both;  
     background-color:rgb(31, 31, 31);

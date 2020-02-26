@@ -1,3 +1,4 @@
+
 function accionPlay()
 {
 	if(!medio.paused && !medio.ended) 
@@ -61,20 +62,20 @@ function accionMenosVolumen()
 
 function iniciar() 
 {	
-	    medio=document.getElementById('medio');
-	    play=document.getElementById('play');
-	    reiniciar=document.getElementById('reiniciar');
-	    retrasar=document.getElementById('retrasar');
-	    adelantar=document.getElementById('adelantar');
-	    silenciar=document.getElementById('silenciar');
+	medio=document.getElementById('medio');
+	play=document.getElementById('play');
+	reiniciar=document.getElementById('reiniciar');
+	retrasar=document.getElementById('retrasar');
+	adelantar=document.getElementById('adelantar');
+	silenciar=document.getElementById('silenciar');
 
-	    play.addEventListener('click', accionPlay);
-	    reiniciar.addEventListener('click', accionReiniciar);
-	    retrasar.addEventListener('click', accionRetrasar);
-	    adelantar.addEventListener('click', accionAdelantar);
-	    silenciar.addEventListener('click', accionSilenciar);
-	    menosVolumen.addEventListener('click', accionMenosVolumen);
-	    masVolumen.addEventListener('click', accionMasVolumen);
+	play.addEventListener('click', accionPlay);
+	reiniciar.addEventListener('click', accionReiniciar);
+	retrasar.addEventListener('click', accionRetrasar);
+	adelantar.addEventListener('click', accionAdelantar);
+	silenciar.addEventListener('click', accionSilenciar);
+	menosVolumen.addEventListener('click', accionMenosVolumen);
+	masVolumen.addEventListener('click', accionMasVolumen);
 }   
 window.addEventListener('load', iniciar, false);
 
